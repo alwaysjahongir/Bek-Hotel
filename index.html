@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>BEK Hotel Tashkent</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 1. Hero -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>BEK Hotel Tashkent</h1>
+      <p>Элитный отдых в самом сердце столицы</p>
+      <button onclick="scrollToSection('booking')">Забронировать</button>
+    </div>
+  </header>
+
+  <!-- 2. О нас -->
+  <section class="section about reveal">
+    <h2>О нас</h2>
+    <p>BEK Hotel — новый элитный отель в европейском стиле в Якасарае. Комнаты с кондиционером, Wi‑Fi, ТВ, мини‑баром; есть бассейн, японский сад, ресторан, бизнес‑центр и конференц‑зал.</p>
+  </section>
+
+  <!-- 3. Номера и цены -->
+  <section class="section rooms reveal">
+    <h2>Номера и цены</h2>
+    <div class="room-grid">
+      <div class="room-card">
+        <div class="room-img"></div>
+        <h3>Стандарт</h3>
+        <p>от $51/ночь</p>
+      </div>
+      <div class="room-card">
+        <div class="room-img"></div>
+        <h3>Делюкс</h3>
+        <p>от $61/ночь</p>
+      </div>
+      <div class="room-card">
+        <div class="room-img"></div>
+        <h3>Сьют</h3>
+        <p>индивидуально</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Услуги -->
+  <section class="section features reveal">
+    <h2>Наши услуги</h2>
+    <ul class="features-list">
+      <li>🚗 Трансфер до/из аэропорта (~$30)</li>
+      <li>🏊 Открытый бассейн</li>
+      <li>🍽 Ресторан и бар</li>
+      <li>🛡 Круглосуточная охрана</li>
+      <li>📶 Бесплатный Wi‑Fi</li>
+      <li>📋 Конференц‑зал и бизнес‑центр</li>
+    </ul>
+  </section>
+
+  <!-- 5. Галерея -->
+  <section class="section gallery reveal">
+    <h2>Галерея</h2>
+    <div class="gallery-grid">
+      <div class="gallery-img"></div>
+      <div class="gallery-img"></div>
+      <div class="gallery-img"></div>
+      <div class="gallery-img"></div>
+      <div class="gallery-img"></div>
+    </div>
+  </section>
+
+  <!-- 6. Локация -->
+  <section class="section location reveal">
+    <h2>Расположение</h2>
+    <p>Адрес: Yusuf Hos Hodjib str. 64A, Якасарай, Ташкент</p>
+    <ul>
+      <li>Аэропорт: ~4 км / 6 мин</li>
+      <li>Ж/д вокзал: ~3 км / 6 мин</li>
+      <li>Метро «Космонавтлар»: ~1.5 км</li>
+      <li>Центр города: ~5 км</li>
+    </ul>
+  </section>
+
+  <!-- 7. Бронирование -->
+  <section class="section booking reveal" id="booking">
+    <h2>Забронировать</h2>
+    <form id="bookingForm">
+      <input type="text" name="name" placeholder="Ваше имя" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="tel" name="phone" placeholder="Телефон" required />
+      <select name="room" required>
+        <option value="">Выберите номер</option>
+        <option value="standard">Стандарт</option>
+        <option value="deluxe">Делюкс</option>
+        <option value="suite">Сьют</option>
+      </select>
+      <input type="date" name="date" required />
+      <button type="submit">Отправить заявку</button>
+    </form>
+    <p id="thankMsg" class="hidden">Спасибо! Мы скоро свяжемся с вами.</p>
+  </section>
+
+  <!-- 8. Контакты -->
+  <section class="section contacts reveal">
+    <h2>Контакты</h2>
+    <p>Email: info@bek-hotel.uz</p>
+    <p>Тел: +998 71 120‑90‑12</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 BEK Hotel Tashkent</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
